@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="820.0" prefWidth="1380.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MeuFxmlContrller">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="1057.0">
+         <children>
+            <BorderPane prefHeight="600.0" prefWidth="1100.0" stylesheets="@telaDesing.css">
+               <top>
+                  <AnchorPane prefHeight="0.0" prefWidth="1381.0" styleClass="semiBarra" BorderPane.alignment="CENTER">
+                     <children>
+                        <AnchorPane prefHeight="30.0" prefWidth="1380.0" styleClass="barraSuperior">
+                           <children>
+                              <Button fx:id="close" layoutX="1320.0" layoutY="2.0" mnemonicParsing="false" onAction="#close" prefHeight="24.0" prefWidth="60.0" styleClass="close">
+                                 <graphic>
+                                    <FontAwesomeIcon glyphName="CLOSE" size="1.2em" />
+                                 </graphic>
+                              </Button>
+                              <Button fx:id="minimize" layoutX="1281.0" layoutY="-1.0" mnemonicParsing="false" onAction="#minimize" prefHeight="30.0" prefWidth="45.0" styleClass="minimize">
+                                 <graphic>
+                                    <FontAwesomeIcon glyphName="MINUS" size="1.2em" />
+                                 </graphic>
+                              </Button>
+                              <FontAwesomeIcon glyphName="USERS" layoutX="14.0" layoutY="22.0" size="1.5em" />
+                              <Label layoutX="52.0" layoutY="6.0" text="Sistema SUCON">
+                                 <font>
+                                    <Font name="Tahoma" size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </top>
+               <left>
+                  <AnchorPane prefHeight="813.0" prefWidth="211.0" styleClass="fundoMenu" BorderPane.alignment="CENTER">
+                     <children>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <ImageView fitHeight="192.0" fitWidth="214.0" layoutX="14.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/Branco.png" />
+                                 </image>
+                              </ImageView>
+                           </children></AnchorPane>
+                        <Line endX="69.0" layoutX="131.0" layoutY="188.0" startX="-100.0" stroke="WHITE" />
+                        <Button fx:id="bntRetirada" layoutX="26.0" layoutY="217.0" mnemonicParsing="false" onAction="#escolhaPagina" prefHeight="35.0" prefWidth="180.0" styleClass="bntMenu" text="Cadastrar Retiradas">
+                           <graphic>
+                              <FontAwesomeIcon fill="WHITE" glyphName="FILE" size="1.5em" />
+                           </graphic>
+                        </Button>
+                        <Button fx:id="bntCadastr0Equipamento" layoutX="26.0" layoutY="252.0" mnemonicParsing="false" onAction="#escolhaPagina" prefHeight="35.0" prefWidth="180.0" styleClass="bntMenu" text="Equipamentos">
+                           <graphic>
+                              <FontAwesomeIcon fill="WHITE" glyphName="PLUS" size="1.5em" />
+                           </graphic>
+                        </Button>
+                        <Button fx:id="bntDevol" layoutX="26.0" layoutY="288.0" mnemonicParsing="false" onAction="#escolhaPagina" prefHeight="35.0" prefWidth="180.0" styleClass="bntMenu" text="Devolução">
+                           <graphic>
+                              <FontAwesomeIcon fill="WHITE" glyphName="FOLDER" size="1.5em" />
+                           </graphic>
+                        </Button>
+                        <Button fx:id="bntSair" layoutX="27.0" layoutY="716.0" mnemonicParsing="false" onAction="#Sair" prefHeight="46.0" prefWidth="66.0">
+                           <styleClass>
+                              <String fx:value="excluir" />
+                              <String fx:value="shadow" />
+                           </styleClass>
+                           <graphic>
+                              <ImageView fitHeight="36.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/icons/volte.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="bntCadastrarPessoasEsc" layoutX="26.0" layoutY="323.0" mnemonicParsing="false" onAction="#escolhaPagina" prefHeight="35.0" prefWidth="180.0" styleClass="bntMenu" text="Pessoas">
+                           <graphic>
+                              <FontAwesomeIcon fill="WHITE" glyphName="USERS" size="1.5em" />
+                           </graphic>
+                        </Button>
+                        <Button fx:id="btnTelaSemDevRet" layoutX="26.0" layoutY="358.0" mnemonicParsing="false" onAction="#escolhaPagina" prefHeight="35.0" prefWidth="180.0" styleClass="bntMenu" text="Retiradas">
+                           <graphic>
+                              <FontAwesomeIcon fill="WHITE" glyphName="SIGN_OUT" size="1.5em" />
+                           </graphic>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+               </left>
+               <center>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <AnchorPane fx:id="devolTelas" prefHeight="789.0" prefWidth="1169.0">
+                           <children>
+                              <AnchorPane layoutX="6.0" layoutY="4.0" prefHeight="773.0" prefWidth="247.0">
+                                 <children>
+                                    <TextField fx:id="campoQuantidadedev" layoutX="12.0" layoutY="372.0" prefHeight="29.0" prefWidth="225.0" styleClass="textfield" />
+                                    <Label layoutX="41.0" layoutY="160.0" prefHeight="39.0" prefWidth="174.0" text="Nome da pessoa:">
+                                       <font>
+                                          <Font name="Tahoma Bold" size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="60.0" layoutY="249.0" prefHeight="39.0" prefWidth="136.0" text="Equipamento:">
+                                       <font>
+                                          <Font name="Tahoma Bold" size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="66.0" layoutY="333.0" prefHeight="39.0" prefWidth="124.0" text="Quantidade:">
+                                       <font>
+                                          <Font name="Tahoma Bold" size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <Button fx:id="btEntregar" layoutX="38.0" layoutY="461.0" mnemonicParsing="false" onAction="#entregarEquipamento" prefHeight="69.0" prefWidth="180.0" textFill="WHITE">
+                                       <font>
+                                          <Font name="System Bold" size="21.0" />
+                                       </font>
+                                       <styleClass>
+                                          <String fx:value="logout" />
+                                          <String fx:value="shadow" />
+                                       </styleClass>
+                                       <graphic>
+                                          <ImageView fitHeight="55.0" fitWidth="66.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../img/icons/devolver.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                    <Label layoutX="40.0" layoutY="27.0" prefHeight="113.0" prefWidth="176.0" text="Devolução">
+                                       <font>
+                                          <Font name="Tahoma Bold" size="30.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="campoIdRetirada" disable="true" layoutX="12.0" layoutY="179.0" prefHeight="29.0" prefWidth="225.0" styleClass="campoInvisivel" />
+                                    <Label layoutX="64.0" layoutY="140.0" prefHeight="39.0" prefWidth="120.0">
+                                       <font>
+                                          <Font name="Tahoma Bold" size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="campoNomePessoaRetirada" disable="true" layoutX="11.0" layoutY="197.0" prefHeight="29.0" prefWidth="225.0" styleClass="textfield" />
+                                    <TextField fx:id="campoIEquipamentoRetirada" disable="true" layoutX="13.0" layoutY="288.0" prefHeight="29.0" prefWidth="225.0" styleClass="textfield" />
+                                 </children>
+                                 <styleClass>
+                                    <String fx:value="white-bg" />
+                                    <String fx:value="shadow" />
+                                 </styleClass>
+                              </AnchorPane>
+                              <AnchorPane layoutX="263.0" prefHeight="778.0" prefWidth="899.0">
+                                 <children>
+                                    <TableView fx:id="TabelaRetiradas" layoutX="2.0" layoutY="62.0" onMouseClicked="#selecionarDevolTabela" prefHeight="709.0" prefWidth="891.0">
+                                       <columns>
+                                          <TableColumn fx:id="tabelaNomePessRetirou" prefWidth="236.0" text="Nome da Pessoa" />
+                                          <TableColumn fx:id="tabEquipamentoRetirado" minWidth="0.0" prefWidth="246.0" text="Equipamento" />
+                                          <TableColumn fx:id="tabQuantRetirada" prefWidth="136.0" text="Quantidade" />
+                                          <TableColumn fx:id="tabDiaRetirada" minWidth="0.0" prefWidth="123.0" text="Dia da retirada" />
+                                          <TableColumn fx:id="tabEntregueRetirada" prefWidth="142.0" text="entregue" />
+                                          <TableColumn fx:id="tabIdRetiradas" minWidth="0.0" prefWidth="0.0" text="Id" />
+                                       </columns>
+                                    </TableView>
+                                    <TextField fx:id="CampoPesquisaDevolucao" layoutX="14.0" layoutY="14.0" onKeyTyped="#pesquisarPessoaDevolucao" prefHeight="30.0" prefWidth="365.0" promptText="Pesquisar nome da pessoa:" styleClass="pesquisa" />
+                                    <FontAwesomeIcon glyphName="SEARCH" layoutX="21.0" layoutY="35.0" size="1.5em" />
+                                 </children>
+                                 <styleClass>
+                                    <String fx:value="white-bg" />
+                                    <String fx:value="shadow" />
+                                 </styleClass>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane fx:id="telaRetiradasSemDev" prefHeight="783.0" prefWidth="1169.0">
+                           <children>
+                              <AnchorPane layoutX="6.0" layoutY="7.0" prefHeight="771.0" prefWidth="1157.0">
+                                 <children>
+                                    <AnchorPane layoutY="1.0" prefHeight="765.0" prefWidth="1147.0">
+                                       <children>
+                                          <TableView fx:id="semDevTabelaRetirada" layoutX="10.0" layoutY="76.0" prefHeight="686.0" prefWidth="1126.0">
+                                             <columns>
+                                                <TableColumn fx:id="semDevPessoa" prefWidth="336.0" text="Pessoa" />
+                                                <TableColumn fx:id="semDevEqui" minWidth="0.0" prefWidth="240.0" text="Equipamento" />
+                                                <TableColumn fx:id="semDevQuant" minWidth="0.0" prefWidth="278.0" text="Quantidade" />
+                                                <TableColumn fx:id="semDevDia" prefWidth="269.0" text="Dia da Retirada" />
+                                                <TableColumn fx:id="semDevId" minWidth="0.0" prefWidth="1.0" text="id" />
+                                             </columns>
+                                          </TableView>
+                                          <TextField fx:id="semDevCampoPesquisa" layoutX="14.0" layoutY="14.0" onKeyTyped="#PesquisarRetSemdev" prefHeight="30.0" prefWidth="365.0" promptText="Pesquisar nome equipamento:" styleClass="pesquisa" />
+                                          <FontAwesomeIcon fill="#0f89ca" glyphName="SEARCH" layoutX="21.0" layoutY="35.0" size="1.5em" />
+                                       </children>
+                                       <styleClass>
+                                          <String fx:value="white-bg" />
+                                          <String fx:value="shadow" />
+                                       </styleClass>
+                                    </AnchorPane>
+                                 </children>
+                                 <styleClass>
+                                    <String fx:value="shadow" />
+                                    <String fx:value="white-bg" />
+                                 </styleClass>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane fx:id="retiradasTelas" prefHeight="783.0" prefWidth="1167.0">
+                           <children>
+                              <AnchorPane layoutX="8.0" layoutY="10.0" prefHeight="766.0" prefWidth="1152.0">
+                                 <children>
+                                    <AnchorPane prefHeight="767.0" prefWidth="1152.0">
+                                       <children>
+                                          <Label layoutX="440.0" layoutY="14.0" prefHeight="51.0" prefWidth="282.0" text="Registrar Retiradas" textFill="#111111">
+                                             <font>
+                                                <Font name="Tahoma Bold" size="24.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField fx:id="campoQuantidadeEquipamento" layoutX="778.0" layoutY="375.0" prefHeight="29.0" prefWidth="312.0" styleClass="textfield" />
+                                          <Label layoutX="590.0" layoutY="241.0" prefHeight="39.0" prefWidth="164.0" text="Nome da Pessoa:">
+                                             <font>
+                                                <Font name="Tahoma Bold" size="18.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="591.0" layoutY="303.0" prefHeight="39.0" prefWidth="126.0" text="Equipamento:">
+                                             <font>
+                                                <Font name="Tahoma Bold" size="18.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="592.0" layoutY="370.0" prefHeight="39.0" prefWidth="123.0" text="Quantidade:">
+                                             <font>
+                                                <Font name="Tahoma Bold" size="18.0" />
+                                             </font>
+                                          </Label>
+                                          <ComboBox fx:id="campoComboPessoa" layoutX="778.0" layoutY="245.0" prefHeight="31.0" prefWidth="311.0" styleClass="textfield" />
+                                          <ComboBox fx:id="campoComboEquipamento" layoutX="778.0" layoutY="307.0" prefHeight="31.0" prefWidth="311.0" styleClass="textfield" />
+                                          <Button fx:id="registrarRetirada" layoutX="826.0" layoutY="469.0" mnemonicParsing="false" onAction="#registrarRetiradaEvent" prefHeight="80.0" prefWidth="215.0" text="Registrar">
+                                             <font>
+                                                <Font name="System Bold" size="21.0" />
+                                             </font>
+                                             <styleClass>
+                                                <String fx:value="logout" />
+                                                <String fx:value="shadow" />
+                                             </styleClass>
+                                             <graphic>
+                                                <ImageView fitHeight="67.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../img/icons/adicionar.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </Button>
+                                          <ImageView fitHeight="517.0" fitWidth="519.0" layoutX="14.0" layoutY="134.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../img/Azul.png" />
+                                             </image>
+                                          </ImageView>
+                                          <ComboBox fx:id="comboTipodeEquipamentoRetirada" layoutX="778.0" layoutY="174.0" onAction="#comboTipodeEquipamentoRetiradaEvento" prefHeight="31.0" prefWidth="311.0" styleClass="textfield" />
+                                          <Label layoutX="562.0" layoutY="170.0" prefHeight="39.0" prefWidth="221.0" text="Tipo de Equipamento:">
+                                             <font>
+                                                <Font name="Tahoma Bold" size="18.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                       <styleClass>
+                                          <String fx:value="white-bg" />
+                                          <String fx:value="shadow" />
+                                       </styleClass>
+                                    </AnchorPane>
+                                 </children>
+                                 <styleClass>
+                                    <String fx:value="white-bg" />
+                                    <String fx:value="shadow" />
+                                 </styleClass>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane fx:id="cadastrarPessoaTelas" prefHeight="783.0" prefWidth="1169.0">
+                           <children>
+                              <AnchorPane layoutX="6.0" layoutY="7.0" prefHeight="771.0" prefWidth="1157.0">
+                                 <children>
+                                    <AnchorPane layoutY="1.0" prefHeight="609.0" prefWidth="1147.0">
+                                       <children>
+                                          <TableView fx:id="TabelaPessoas" layoutX="10.0" layoutY="76.0" prefHeight="529.0" prefWidth="1126.0">
+                                             <columns>
+                                                <TableColumn fx:id="NomePessoaTab" prefWidth="423.0" text="Nome" />
+                                                <TableColumn fx:id="setoPessoaTab" prefWidth="437.0" text="Setor ou Curso" />
+                                                <TableColumn fx:id="TelefonePessoaTab" prefWidth="261.0" text="Telefone" />
+                                             </columns>
+                                          </TableView>
+                                          <TextField fx:id="CampoPesquisaPessoa" layoutX="14.0" layoutY="14.0" onKeyTyped="#PesquisarPessoaPorNome" prefHeight="30.0" prefWidth="365.0" promptText="Pequisar nome da pessoa: " styleClass="pesquisa" />
+                                          <FontAwesomeIcon fill="#0f89ca" glyphName="SEARCH" layoutX="21.0" layoutY="35.0" size="1.5em" />
+                                       </children>
+                                       <styleClass>
+                                          <String fx:value="white-bg" />
+                                          <String fx:value="shadow" />
+                                       </styleClass>
+                                    </AnchorPane>
+                                    <TextField fx:id="CampoSetor" layoutX="217.0" layoutY="727.0" prefHeight="29.0" prefWidth="312.0" styleClass="textfield" />
+                                    <TextField fx:id="campoNomePessoa" layoutX="217.0" layoutY="678.0" prefHeight="29.0" prefWidth="312.0" styleClass="textfield" />
+                                    <Label layoutX="28.0" layoutY="673.0" prefHeight="39.0" prefWidth="164.0" text="Nome da Pessoa:">
+                                       <font>
+                                          <Font name="Tahoma Bold" size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="28.0" layoutY="722.0" prefHeight="39.0" prefWidth="164.0" text="Setor/Curso:">
+                                       <font>
+                                          <Font name="Tahoma Bold" size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="574.0" layoutY="673.0" prefHeight="39.0" prefWidth="164.0" text="Telefone:">
+                                       <font>
+                                          <Font name="Tahoma Bold" size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="campoTelefone" layoutX="689.0" layoutY="678.0" prefHeight="29.0" prefWidth="312.0" styleClass="textfield" />
+                                    <Button fx:id="bntCadastrarPessoa" layoutX="690.0" layoutY="717.0" mnemonicParsing="false" onAction="#cadastrarPessoaEvent" prefHeight="41.0" prefWidth="310.0" text="Cadastrar" textFill="WHITE">
+                                       <font>
+                                          <Font name="System Bold" size="24.0" />
+                                       </font>
+                                       <styleClass>
+                                          <String fx:value="logout" />
+                                          <String fx:value="shadow" />
+                                       </styleClass>
+                                    </Button>
+                                    <Label layoutX="418.0" layoutY="621.0" prefHeight="42.0" prefWidth="322.0" text="Cadastrar Pessoas">
+                                       <font>
+                                          <Font name="Tahoma Bold" size="33.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                                 <styleClass>
+                                    <String fx:value="shadow" />
+                                    <String fx:value="white-bg" />
+                                 </styleClass>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane fx:id="cadastrTelas" prefHeight="783.0" prefWidth="1167.0">
+                           <children>
+                              <AnchorPane layoutX="8.0" layoutY="10.0" prefHeight="766.0" prefWidth="1152.0">
+                                 <children>
+                                    <AnchorPane prefHeight="763.0" prefWidth="1013.0">
+                                       <children>
+                                          <TableView fx:id="TabelaCadatroEquip" layoutX="300.0" layoutY="62.0" onMouseClicked="#selecionarEquipamentoIntemTabela" prefHeight="694.0" prefWidth="845.0">
+                                             <columns>
+                                                <TableColumn fx:id="tabelaNomeEqui" prefWidth="284.0" text="Nome Equipamento" />
+                                                <TableColumn fx:id="tabQuantEqui" prefWidth="180.0" text="Quantidade" />
+                                                <TableColumn fx:id="tabDisponEqui" minWidth="0.0" prefWidth="171.2000732421875" text="Disponivel" />
+                                                <TableColumn fx:id="columTabEquiPodeEmprestar" minWidth="0.0" prefWidth="142.39996337890625" text="Pode Emprestar" />
+                                                <TableColumn fx:id="tabIdEqui" minWidth="0.0" prefWidth="0.0" text="Id" />
+                                             </columns>
+                                          </TableView>
+                                          <TextField fx:id="CampoPesquisaEqui" layoutX="302.0" layoutY="17.0" onKeyTyped="#buscarPorNomeEqui" prefHeight="30.0" prefWidth="260.0" promptText="Pesquisa nome do equipamento:" styleClass="pesquisa" />
+                                          <FontAwesomeIcon fill="#0f89ca" glyphName="SEARCH" layoutX="308.0" layoutY="38.0" size="1.5em" text="" />
+                                          <ComboBox fx:id="visializarTipodeEquipamentoCombo" layoutX="972.0" layoutY="15.0" onAction="#visializarTipodeEquipamentoComboEvent" prefHeight="34.0" prefWidth="170.0" styleClass="textfield" />
+                                          <Label layoutX="882.0" layoutY="15.0" prefHeight="33.0" prefWidth="82.0" text="Visualizar:">
+                                             <font>
+                                                <Font name="Tahoma Bold" size="14.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="10.0" layoutY="177.0" prefHeight="38.0" prefWidth="54.0" text="Tipo:">
+                                             <font>
+                                                <Font name="Tahoma Bold" size="18.0" />
+                                             </font>
+                                          </Label>
+                                          <ComboBox fx:id="campoCadastroComboTipoEqui" layoutX="140.0" layoutY="181.0" onAction="#comboTipoEqui" prefHeight="31.0" prefWidth="153.0" styleClass="textfield" />
+                                          <TextField fx:id="campoNomeEquipamento" layoutX="140.0" layoutY="245.0" prefHeight="31.0" prefWidth="153.0" styleClass="textfield" />
+                                          <Label layoutX="14.0" layoutY="241.0" prefHeight="38.0" prefWidth="66.0" text="Nome:">
+                                             <font>
+                                                <Font name="Tahoma Bold" size="18.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="10.0" layoutY="304.0" prefHeight="39.0" prefWidth="116.0" text="Quantidade:">
+                                             <font>
+                                                <Font name="Tahoma Bold" size="18.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField fx:id="campoQuantidade" layoutX="140.0" layoutY="308.0" prefHeight="31.0" prefWidth="153.0" styleClass="textfield" />
+                                          <Label layoutX="10.0" layoutY="373.0" prefHeight="39.0" prefWidth="116.0" text="Disponivel:">
+                                             <font>
+                                                <Font name="Tahoma Bold" size="18.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField fx:id="campoQuantDispEquipamento" disable="true" layoutX="140.0" layoutY="377.0" prefHeight="31.0" prefWidth="153.0" styleClass="textfield" />
+                                          <Button layoutX="104.0" layoutY="503.0" mnemonicParsing="false" onAction="#editarEquipamento" prefHeight="58.0" prefWidth="70.0" textFill="WHITE">
+                                             <font>
+                                                <Font name="System Bold" size="21.0" />
+                                             </font>
+                                             <styleClass>
+                                                <String fx:value="editar" />
+                                                <String fx:value="shadow" />
+                                             </styleClass>
+                                             <graphic>
+                                                <ImageView fitHeight="43.0" fitWidth="57.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../img/icons/editar.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </Button>
+                                          <Label layoutX="63.0" layoutY="62.0" prefHeight="39.0" prefWidth="154.0" text="EQUIPAMENTOS">
+                                             <font>
+                                                <Font name="Tahoma Bold" size="18.0" />
+                                             </font>
+                                          </Label>
+                                          <Button layoutX="197.0" layoutY="503.0" mnemonicParsing="false" onAction="#excluirEquipamento" prefHeight="58.0" prefWidth="70.0" textFill="WHITE">
+                                             <font>
+                                                <Font name="System Bold" size="21.0" />
+                                             </font>
+                                             <styleClass>
+                                                <String fx:value="excluir" />
+                                                <String fx:value="shadow" />
+                                             </styleClass>
+                                             <graphic>
+                                                <ImageView fitHeight="43.0" fitWidth="57.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../img/icons/excluir.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </Button>
+                                          <Button fx:id="bntCadastrar11" layoutX="15.0" layoutY="503.0" mnemonicParsing="false" onAction="#eventoCadastrarEqui" prefHeight="58.0" prefWidth="70.0" textFill="WHITE">
+                                             <font>
+                                                <Font name="System Bold" size="21.0" />
+                                             </font>
+                                             <styleClass>
+                                                <String fx:value="logout" />
+                                                <String fx:value="shadow" />
+                                             </styleClass>
+                                             <graphic>
+                                                <ImageView fitHeight="43.0" fitWidth="57.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../img/icons/adicionar.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </Button>
+                                          <TextField fx:id="campoIdEquipamento" disable="true" layoutX="140.0" layoutY="126.0" prefHeight="31.0" prefWidth="153.0" styleClass="campoInvisivel" />
+                                       </children>
+                                       <styleClass>
+                                          <String fx:value="white-bg" />
+                                          <String fx:value="shadow" />
+                                       </styleClass>
+                                    </AnchorPane>
+                                 </children>
+                                 <styleClass>
+                                    <String fx:value="white-bg" />
+                                    <String fx:value="shadow" />
+                                 </styleClass>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </center>
+            </BorderPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

@@ -1,0 +1,247 @@
+/* Estilo para a barra superior */
+.barraSuperior{
+    -fx-background-color:#fff; /* Cor de fundo branca */
+    -fx-border-color:#000; /* Cor da borda preta */
+    -fx-border-width:.4px .4px .2px .4px; /* Espessura das bordas */
+}
+
+/* Estilo para a semi barra */
+.semiBarra{
+    -fx-background-color:#efefef; /* Cor de fundo cinza claro */
+    -fx-border-color:#000; /* Cor da borda preta */
+    -fx-border-width:.2px .4px .8px .4px; /* Espessura das bordas */
+}
+
+/* Estilo para o botão de fechar */
+.close{
+    -fx-background-color:transparent; /* Fundo transparente */
+    -fx-cursor:hand; /* Cursor de mão */
+}
+.close:hover{
+    -fx-background-color:#ff3547; /* Cor ao passar o mouse */
+}
+
+/* Estilo para o botão de minimizar */
+.minimize{
+    -fx-background-color:transparent; /* Fundo transparente */
+    -fx-cursor:hand; /* Cursor de mão */
+}
+.minimize:hover{
+    -fx-background-color:#ddd; /* Cor ao passar o mouse */
+}
+
+/* Estilo para o fundo do menu */
+.fundoMenu{ 
+    -fx-background-color:linear-gradient(to bottom right, #272b3f,  #0f89ca); /* Gradiente azul */
+}
+
+/* Estilo para os botões do menu */
+.bntMenu{
+    -fx-background-color:transparent; /* Fundo transparente */
+    -fx-cursor:hand; /* Cursor de mão */
+    -fx-font-family:"Arial"; /* Fonte Arial */
+    -fx-font-size:20px; /* Tamanho da fonte */
+    -fx-text-fill:#fff; /* Cor do texto */
+    -fx-alignment:CENTER-LEFT; /* Alinhamento à esquerda */
+}
+
+/* Estilo para o botão de logout */
+.logout{
+    -fx-background-color:#219a6a; /* Cor verde */
+    -fx-background-radius:10px; /* Bordas arredondadas */
+    -fx-cursor:hand; /* Cursor de mão */
+}
+.logout:hover{
+    -fx-background-color:#18a383; /* Cor ao passar o mouse */
+}
+
+
+/* Estilo para o botão de exclir */
+.excluir{
+    -fx-background-color:#e74c3c; /* Cor verde */
+    -fx-background-radius:10px; /* Bordas arredondadas */
+    -fx-cursor:hand; /* Cursor de mão */
+}
+.excluir:hover{
+    -fx-background-color:#c0392b; /* Cor ao passar o mouse */
+}
+
+/* Estilo para o botão de editar */
+.editar {
+    -fx-background-color: #f39c12; /* Cor laranja */
+    -fx-background-radius: 10px; /* Bordas arredondadas */
+    -fx-cursor: hand; /* Cursor de mão */
+}
+.editar:hover {
+    -fx-background-color: #e67e22; /* Cor ao passar o mouse, tom mais escuro de laranja */
+}
+
+
+/* Efeito de sombra */
+.shadow{
+    -fx-effect:dropshadow(three-pass-box, rgba(0,0,0,0.5), 6,0,0,0);
+}
+
+/* Fundo branco com bordas arredondadas */
+.white-bg{
+    -fx-background-color:#fff; /* Fundo branco */
+    -fx-background-radius:8px; /* Bordas arredondadas */
+}
+
+/* Estilo para cartões */
+.card{
+    -fx-background-color:linear-gradient(to right, #2b303c, #0f89ca); /* Gradiente azul */
+    -fx-background-radius:5px; /* Bordas arredondadas */
+}
+
+
+/* Estilo dos campos de texto */
+.textfield{
+    -fx-background-color:linear-gradient(to bottom, #efefef, #eee); /* Gradiente de fundo */
+    -fx-border-color:linear-gradient(to bottom right, #0f89ca, #0f89ca); /* Gradiente nas bordas */
+    -fx-border-width:.8px; /* Espessura das bordas */
+    -fx-font-family:"Tahoma"; /* Fonte Tahoma */
+    -fx-border-radius:4px; /* Bordas arredondadas */
+}
+.textfield:focused{
+    -fx-border-width:1.8px; /* Espessura das bordas ao focar */
+    -fx-background-color:#fff; /* Fundo branco ao focar */
+}
+
+.campoInvisivel{
+    -fx-opacity: 0; /* Torna o campo completamente invisível */
+    -fx-background-color: transparent; /* Fundo transparente */
+    -fx-border-color: transparent; /* Borda transparente */
+    -fx-font-size: 14px; /* Tamanho da fonte */
+}
+
+/* Estilo para pesquisa */
+.pesquisa{
+    -fx-background-color:transparent; /* Fundo transparente */
+    -fx-border-color:linear-gradient(to bottom right, #0f89ca, #0f89ca); /* Gradiente nas bordas */
+    -fx-border-radius:5px; /* Bordas arredondadas */
+    -fx-font-size:13px; /* Tamanho da fonte */
+    -fx-font-family:"Arial"; /* Fonte Arial */
+    -fx-border-width:1px; /* Espessura das bordas */
+    -fx-padding:0px 0px 0px 28px; /* Preenchimento */
+}
+.pesquisa:focused{
+    -fx-border-width:2px; /* Espessura das bordas ao focar */
+}
+
+/* Estilo para botões de importação */
+.import-btn{
+    -fx-background-color:#ddd; /* Cor de fundo cinza claro */
+    -fx-text-fill:red; /* Cor do texto vermelho */
+    -fx-cursor:hand; /* Cursor de mão */
+}
+
+/* Estilo para o botão de cadastrar */
+.cadastrarBtn{
+    -fx-background-color:#128a50; /* Cor verde */
+    -fx-background-radius:8px; /* Bordas arredondadas */
+    -fx-text-fill:#fff; /* Cor do texto */
+    -fx-font-size:14px; /* Tamanho da fonte */
+    -fx-font-family:"Arial"; /* Fonte Arial */
+    -fx-cursor:hand; /* Cursor de mão */
+}
+.cadastrarBtn:hover{
+    -fx-background-color:#3357a4; /* Cor ao passar o mouse */
+}
+
+/* Estilo para o botão de atualizar */
+
+
+/* Estilo para o botão de deletar */
+.delete-btn{
+    -fx-background-color:#86253f; /* Cor vermelha escura */
+    -fx-background-radius:8px; /* Bordas arredondadas */
+    -fx-text-fill:#fff; /* Cor do texto */
+    -fx-font-size:14px; /* Tamanho da fonte */
+    -fx-font-family:"Arial"; /* Fonte Arial */
+    -fx-cursor:hand; /* Cursor de mão */
+}
+.delete-btn:hover{
+    -fx-background-color:#ae1d46; /* Cor ao passar o mouse */
+}
+
+/* Estilo para o botão de limpar */
+.clear-btn{
+    -fx-background-color:#753566; /* Cor roxa */
+    -fx-background-radius:8px; /* Bordas arredondadas */
+    -fx-text-fill:#fff; /* Cor do texto */
+    -fx-font-size:14px; /* Tamanho da fonte */
+    -fx-font-family:"Arial"; /* Fonte Arial */
+    -fx-cursor:hand; /* Cursor de mão */
+}
+.clear-btn:hover{
+    -fx-background-color:#9d3485; /* Cor ao passar o mouse */
+}
+
+/* Estilo para rótulos informativos */
+.label-info{
+    -fx-background-color:transparent; /* Fundo transparente */
+    -fx-border-color:linear-gradient(to bottom right, #272b3f, #256b51); /* Gradiente nas bordas */
+    -fx-border-radius:4px; /* Bordas arredondadas */
+    -fx-padding:0px 0px 0px 8px; /* Preenchimento */
+}
+
+
+
+
+
+
+
+/* Estilo para a tabela */
+.table-view {
+    -fx-background-color: transparent; /* Fundo transparente */
+    -fx-border-color: #000; /* Linha preta ao redor da tabela */
+    -fx-border-width: 1px; /* Espessura da borda da tabela */
+    -fx-border-radius: 8px; /* Bordas arredondadas */
+    -fx-font-family: "Nefrito"; /* Fonte Nefrito para a tabela */
+    -fx-font-size: 16px; /* Aumenta o tamanho da fonte */
+}
+
+/* Estilo para o cabeçalho da coluna */
+.table-view .column-header-background {
+    -fx-background-color: linear-gradient(to bottom right, #272b3f, #0f89ca); /* Gradiente azul para cabeçalhos */
+    -fx-border-color: #000; /* Linha preta na parte inferior do cabeçalho */
+    -fx-border-width: 0 0 1px 0; /* Apenas linha inferior */
+    -fx-background-insets: 0 0 0 0; /* Sem insets */
+    -fx-background-radius: 8px 8px 0px 0px; /* Bordas arredondadas no topo */
+}
+
+/* Estilo para o cabeçalho e filtros */
+.table-view .column-header, .filter {
+    -fx-background-color: transparent; /* Fundo transparente */
+    -fx-font-size: 16px; /* Aumenta o tamanho da fonte do cabeçalho */
+    -fx-size: 40px; /* Altura do cabeçalho */
+    -fx-font-family: "Nefrito"; /* Fonte Nefrito para cabeçalho e filtros */
+}
+
+/* Estilo do texto no cabeçalho */
+.table-view .column-header .label {
+    -fx-text-fill: #fff; /* Cor do texto no cabeçalho */
+    -fx-font-family: "Nefrito"; /* Fonte Nefrito para o texto do cabeçalho */
+}
+
+/* Estilo para as linhas ímpares e pares com cores estilo Excel */
+.table-view .table-row-cell:odd {
+    -fx-background-color: #ffffff; /* branco */
+    -fx-font-family: "Nefrito"; /* Fonte Nefrito para linhas ímpares */
+    -fx-font-size: 16px; /* Aumenta o tamanho da fonte para linhas ímpares */
+}
+
+.table-view .table-row-cell:even {
+    -fx-background-color: #f0f0f0; /* Cinza claro (similar ao Excel) */
+    -fx-font-family: "Nefrito"; /* Fonte Nefrito para linhas pares */
+    -fx-font-size: 16px; /* Aumenta o tamanho da fonte para linhas pares */
+}
+
+/* Estilo para a linha selecionada */
+.table-view .table-row-cell:selected {
+    -fx-background-color: #007bff; /* Cor azul ao selecionar */
+    -fx-text-fill: white; /* Cor do texto ao selecionar */
+    -fx-font-family: "Nefrito"; /* Fonte Nefrito para linha selecionada */
+    -fx-font-size: 16px; /* Aumenta o tamanho da fonte para linha selecionada */
+}

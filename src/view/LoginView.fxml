@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane stylesheets="@telaDesing.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginViewController">
+   <children>
+       <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0">
+           <right>
+               <AnchorPane prefHeight="500.0" prefWidth="418.0" BorderPane.alignment="CENTER">
+                   <children>
+                       <TextField fx:id="campoUsuario" layoutX="114.0" layoutY="209.0" promptText="Usuario" style="-fx-background-color: transparent; -fx-border-color: #272b3f; -fx-border-width: 0px 0px 2px 0px;" />
+                       <PasswordField fx:id="compoSenha" layoutX="114.0" layoutY="262.0" promptText="Senha" style="-fx-background-color: transparent; -fx-border-color: #272b3f; -fx-border-width: 0px 0px 2px 0px;" />
+                       <FontAwesomeIcon fill="#272b3f" glyphName="USER" layoutX="78.0" layoutY="230.0" size="20" />
+                       <FontAwesomeIcon fill="#272b3f" glyphName="KEY" layoutX="76.0" layoutY="286.0" size="20" text="" />
+                       <Button layoutX="140.0" layoutY="345.0" mnemonicParsing="false" onAction="#fazerLogin" prefHeight="38.0" prefWidth="82.0" style="-fx-background-color: #272b3f;" text="Login" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Button>
+                       <FontAwesomeIcon fill="#272b3f" glyphName="USERS" layoutX="162.0" layoutY="124.0" size="35" />
+                       <Text fill="#272b3f" layoutX="158.0" layoutY="159.0" text="Login">
+                           <font>
+                               <Font size="18.0" />
+                           </font>
+                       </Text>
+                  <Button fx:id="close" layoutX="346.0" layoutY="2.0" mnemonicParsing="false" onAction="#close" prefHeight="24.0" prefWidth="60.0" styleClass="close">
+                     <graphic>
+                        <FontAwesomeIcon fill="#272b3f" glyphName="CLOSE" size="1.2em" />
+                     </graphic>
+                  </Button>
+                   </children>
+               </AnchorPane>
+           </right>
+         <left>
+            <AnchorPane prefHeight="500.0" prefWidth="286.0" styleClass="fundoMenu" BorderPane.alignment="CENTER">
+               <children>
+                       <ImageView fitHeight="286.0" fitWidth="287.0" layoutY="112.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                               <Image url="@../img/Branco.png" />
+                           </image>
+                       </ImageView>
+               </children>
+            </AnchorPane>
+         </left>
+       </BorderPane>
+   </children>
+</AnchorPane>

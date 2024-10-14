@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="ProjetoSucon.jnlp">
+    <information>
+        <title>ProjetoSucon</title>
+        <vendor>Carlos Zetti</vendor>
+        <description>null</description>
+        <offline-allowed/>
+    </information>
+    <update check="always"/>
+    <resources>
+        <j2se version="10.0.2+" java-vm-args="--module-path &quot;C:\Users\Carlos Zetti\Documents\NetBeansProjects\TesteEx\bibliotela\javafx-sdk-17\lib&quot; --add-modules javafx.controls,javafx.fxml " href="http://java.sun.com/products/autodl/j2se"/>
+        <jar href="ProjetoSucon.jar" size="253442" download="eager"/>
+        <jar href="lib\fontawesomefx-8.2.jar" size="180341" download="eager"/>
+        <jar href="lib\jfreechart-1.0.19.jar" size="1565065" download="eager"/>
+        <jar href="lib\postgresql-42.2.12.jar" size="930498" download="eager"/>
+    </resources>
+    <jfx:javafx-desc width="800" height="600" main-class="view.Main" name="Main"/>
+</jnlp>
+
